@@ -6,11 +6,16 @@ body {
 }
 
 h1 {
-    color: hsl(200, 50, 50);
+    color: hsl(200, 50%, 50%);
 }
 
 p {
     max-width: 920px;
-    margin: 20px;
+    margin: 20px auto;
     font-family: sans-serif;
+}
+
+img {
+    max-width: 500px;
+    margin-inline: auto;
 }
