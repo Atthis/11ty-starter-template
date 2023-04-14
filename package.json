@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "del-cli public",
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "npm run clean && eleventy"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11tyrocks/eleventy-plugin-sass-lightningcss": "^1.0.2",
+    "del-cli": "^5.0.0",
+    "esbuild": "^0.17.16",
     "i": "^0.3.7"
-  },
-  "dependencies": {}
+  }
 }

@@ -91,11 +91,9 @@ Afin d'informer GitHub que nous ne voulons pas utiliser Jekyll, il faut ajouter 
 
 Si cela n'est pas déjà fait, ajoutez dans votre fichier `package.json` une commande pour "build" le site avec Eleventy.
 ```json
-[...]
 "scripts": {
     "build": "eleventy"
   },
-[...]
 ```
 
 ## Test de fonctionnement et génération de la branche "gh-pages"
