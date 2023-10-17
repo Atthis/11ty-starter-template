@@ -120,6 +120,8 @@ Choisissez comme source "Déployer à partir d'une branche", et sélectionner la
 
 Lors du prochain push sur la branche main, le workflow créera le build des fichiers public, puis les enverra sur la branche "gh-pages". Cette branche étant alors mise à jour, le déploiement via la GitHub page se lancera automatiquement, mettant en place le site statique à l'adresse "https://<utilisateur>.github.io/<nom du dépôt>/".
 
+**Attention** : si aucun fichier source (concernant le site : html, css, js...) n'a été modifié, le build et déploiement GH-Pages ne sera pas lancé.
+
 # Debug
 
 - si au lancement du serveur, on a l'erreur `Cannot find module 'node:fs'`, penser à contrôler la version de Node.js : ^18
